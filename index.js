@@ -1,14 +1,16 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const letterrouter = require('./letters/router')
+const letterRouter = require('./letters/router')
+const userRouter = require('./users/router')
 
 const app = express()
 
 const jsonParser = bodyParser.json()
 app.use(cors())
 app.use(jsonParser)
-app.use(letterrouter)
+app.use(letterRouter)
+app.use(userRouter)
 
 
 
