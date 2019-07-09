@@ -1,6 +1,8 @@
 const { Router } = require('express')
 const User = require('./model')
 const bcrypt = require('bcrypt')
+const bodyParser = require('body-parser')
+const jsonParser = bodyParser.json()
 
 const router = new Router()
 

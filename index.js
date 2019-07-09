@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const letterRouter = require('./letters/router')
 const userRouter = require('./users/router')
+const authRouter = require('./auth/router')
 const wordRouter = require('./word/router')
 const categoryRouter = require('./category/router')
 
@@ -14,6 +15,7 @@ app.use(jsonParser)
 app.use(letterRouter)
 app.use(userRouter)
 app.use(wordRouter)
+app.use(authRouter)
 app.use(categoryRouter)
 
 
