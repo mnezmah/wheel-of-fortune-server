@@ -8,7 +8,8 @@ const Category = db.define(
             type: Sequelize.STRING,
             field: 'category_name'
         }
-    }
+    },
+    {timestamps:false}
 )
 module.exports = Category
   
