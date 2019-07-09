@@ -6,6 +6,7 @@ const userRouter = require('./users/router')
 const authRouter = require('./auth/router')
 const wordRouter = require('./word/router')
 const categoryRouter = require('./category/router')
+const gameRouter = require('./games/router')
 
 const app = express()
 
@@ -17,6 +18,7 @@ app.use(userRouter)
 app.use(wordRouter)
 app.use(authRouter)
 app.use(categoryRouter)
+app.use(gameRouter)
 
 
 
