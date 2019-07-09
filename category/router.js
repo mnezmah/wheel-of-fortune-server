@@ -12,11 +12,18 @@ router.post('/category', function (req, res, next) {
 
 router.get('/category/:id', function (req, res, next) {
     Word
-        .findAll({ where: { categoryId: req.params.id } }, { include: [Category] })
-        .then(word => { res.json({ words: word }) })
-        .catch(err => {
-            next(err)
+        .findAll({
+            where: {categoryId:req.params.id}
         })
+        .then(word => {res.json({ words: word })})
+        .catch(next)
+})
+
+router.get('/category/', function (req, res, next) {
+    Category
+        .findAll()
+        .then(category => {res.json({ categories: category })})
+        .catch(next)
 })
 
 module.exports = router
