@@ -3,53 +3,44 @@ const Game = require('./model.js')
 const router = express.Router()
 const Sse = require('json-sse')
 
-Game
-  .findAll({ words: ['word'] })
-  .then(words => {
-    const json = JSON.stringify(words)
-    const stream = new Sse(json)
+const stream = new Sse()
 
-    function onStream(request, response) {
-      stream.init(request, response)
-    }
-    router.get('/stream', onStream)
+router.get('/stream', function (req, res, next) {
+  Game
+    .findAll()
+    .then(game => {
+      const json = JSON.stringify(game)
 
-    function onGame(request, response) {
-      const { words, wheelValue, guessed } = request.body
-      // const guessed=['a','b']
+      stream.init(req, res)
+      return stream.updateInit(json)
+    })
+    .catch(next)
+})
 
-      Game
-        .create({ words, wheelValue, guessed })
-        .then(word => {
-          Game.
-            findAll()
-            .then(words => {
-              const json = JSON.stringify(words)
+router.post('/game', function (req, res, next) {
+  Game.create(req.body)
+    .then(game => {
+      const json = JSON.stringify(game)
+      stream.updateInit(json)
+      return res.status(201)
+        .send(game)
+    })
+    .catch(next)
+})
 
-              stream.updateInit(json)
+router
+  .put('/game/:id', (req, res, next) => {
+    const id = req.params.id
+   
 
-              stream.send(words)
-
-              return response
-                .status(201)
-                .send(word)
-            })
-            .catch(err => {
-              response.status(500)
-                .json({
-                  message: 'Someting went wrong',
-                  error: err
-                })
-            })
-        })
-    }
-    router.post('/game', onGame)
-
-    // Game
-    //     .put('/word',(req, res, next) => {
-    //         const id = req.params.id
-    //     })
-
+    Game
+      .findByPk(id)
+      .then(game =>  {
+        const json = JSON.stringify(game)
+        stream.updateInit(json)
+        game.update({ guessed: req.body.guessed })
+      .then(updatedGame => res.status(200).send(updatedGame))
+    })
+      .catch(next)
   })
-
 module.exports = router
