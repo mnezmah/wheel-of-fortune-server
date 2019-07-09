@@ -20,7 +20,7 @@ router
         .create(user)
         .then(user => {
           res
-            .status(200)
+            .status(201)
             .send(user)
         })
         .catch(err =>
