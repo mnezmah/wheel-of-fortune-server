@@ -11,7 +11,7 @@ const Game = db.define(
             type: Sequelize.ARRAY(Sequelize.STRING)
         },
         guessed: {
-            type: Sequelize.ARRAY(Sequelize.CHAR)
+            type: Sequelize.ARRAY(Sequelize.STRING(1))
         },
     },
     { timestamps: false }

@@ -14,7 +14,7 @@ Game
     }
     router.get('/stream', onStream)
 
-    function onWord(request, response) {
+    function onGame(request, response) {
       const { words, wheelValue, guessed } = request.body
       // const guessed=['a','b']
 
@@ -43,7 +43,7 @@ Game
             })
         })
     }
-    router.post('/word', onWord)
+    router.post('/game', onGame)
 
     // Game
     //     .put('/word',(req, res, next) => {
