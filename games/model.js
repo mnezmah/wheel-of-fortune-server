@@ -6,6 +6,9 @@ const Game = db.define(
     {
         words: {
             type: Sequelize.ARRAY(Sequelize.STRING),
+        },
+        wheelValue: {
+            type: Sequelize.STRING
         }
     },
     {timestamps:false}
