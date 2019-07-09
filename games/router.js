@@ -15,10 +15,11 @@ Game
     router.get('/stream', onStream)
 
     function onWord(request, response) {
-      const { words } = request.body
+      const { words, wheelValue, guessed } = request.body
+      // const guessed=['a','b']
 
       Game
-        .create({ words: words })
+        .create({ words, wheelValue, guessed })
         .then(word => {
           Game.
             findAll()
@@ -43,6 +44,12 @@ Game
         })
     }
     router.post('/word', onWord)
+
+    // Game
+    //     .put('/word',(req, res, next) => {
+    //         const id = req.params.id
+    //     })
+
   })
 
 module.exports = router
