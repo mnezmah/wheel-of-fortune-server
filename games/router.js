@@ -4,7 +4,7 @@ const router = express.Router()
 const Sse = require('json-sse')
 
 const stream = new Sse()
-
+console.log('log me')
 router.get('/stream', function (req, res, next) {
   Game
     .findAll()
