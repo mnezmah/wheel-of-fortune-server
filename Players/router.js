@@ -13,6 +13,18 @@ router.get('/scoreboard', (req, res, next) => {
     }).catch(next)
 })
 
+router.get('/players/:id', (req, res, next) => {
+  const id = req.params.id
+  Player
+    .findByPk(id)
+    .then(player => {
+      res
+        .status(200)
+        .send(player)
+    }).catch(next)
+})
+
+
 router.post('/players', (req, res, next) => {
   Player
     .create(req.body)

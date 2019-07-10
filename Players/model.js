@@ -11,4 +11,6 @@ const Player = db.define(
 )
 
 Player.belongsTo(Game)
+Game.hasMany(Player)
+
 module.exports = Player
