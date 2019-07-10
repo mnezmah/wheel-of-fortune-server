@@ -5,7 +5,8 @@ const Game = require('../games/model')
 const Player = db.define(
   'players', {
     name: Sequelize.STRING,
-    score: Sequelize.INTEGER
+    score: Sequelize.INTEGER,
+    turn: Sequelize.INTEGER
   },
   { timestamps: false }
 )
