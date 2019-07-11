@@ -8,7 +8,7 @@ const Game = db.define(
             type: Sequelize.ARRAY(Sequelize.STRING)
         },
         wheelValue: {
-            type: Sequelize.ARRAY(Sequelize.STRING)
+            type: Sequelize.STRING
         },
         guessed: {
             type: Sequelize.ARRAY(Sequelize.STRING(1))
