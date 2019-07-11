@@ -41,10 +41,7 @@ router.put('/players/:id', (req, res, next) => {
   Player
     .findByPk(id)
     .then(player => {
-      player.update({
-        score: req.body.score,
-        gameId: req.body.gameid
-      }).then(updatedPlayer =>
+      player.update(req.body).then(updatedPlayer =>
         res
           .status(204)
           .send(updatedPlayer)
