@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize')
-const db = require('../db.js')
+const db = require('../db')
+const Game = require('../games/model')
 
 const Category = db.define(
     'category',
@@ -11,5 +12,7 @@ const Category = db.define(
     },
     {timestamps:false}
 )
+
+Category.hasMany(Game)
+Game.belongsTo(Category)
 module.exports = Category
-  

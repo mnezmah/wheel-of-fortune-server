@@ -3,11 +3,12 @@ const Game = require('./model.js')
 const router = express.Router()
 const Sse = require('json-sse')
 const Player = require('../Players/model')
+const Category = require('../category/model')
 
 const stream = new Sse()
 router.get('/stream', function (req, res, next) {
   Game
-    .findAll({ include: [Player] })
+    .findAll({ include: [Player, Category] })
     .then(game => {
       const json = JSON.stringify(game)
       stream.init(req, res)
@@ -22,7 +23,7 @@ router.get('/game/:id', function (req, res, next) {
     .findByPk(
       id,
       {
-        include: [Player],
+        include: [Player, Category ]
       }
     )
     .then(game => {

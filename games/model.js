@@ -13,6 +13,9 @@ const Game = db.define(
         guessed: {
             type: Sequelize.ARRAY(Sequelize.STRING(1))
         },
+        buttons: {
+            type: Sequelize.ARRAY(Sequelize.STRING)
+        },
     },
     { timestamps: false }
 )
