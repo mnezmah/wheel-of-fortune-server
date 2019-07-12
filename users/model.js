@@ -10,14 +10,13 @@ const User = sequelize.define('users', {
   password: {
     type: Sequelize.STRING,
     allowNull: false
-  }
-  ,
+  },
   score: {
     type: Sequelize.INTEGER
   }
 }, {
-  timestamps: false,
-  tableName: 'users'
-})
+    timestamps: false,
+    tableName: 'users'
+  })
 
 module.exports = User

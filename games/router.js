@@ -7,7 +7,7 @@ const Player = require('../Players/model')
 const stream = new Sse()
 router.get('/stream', function (req, res, next) {
   Game
-    .findAll()
+    .findAll({ include: [Player] })
     .then(game => {
       const json = JSON.stringify(game)
       stream.init(req, res)
