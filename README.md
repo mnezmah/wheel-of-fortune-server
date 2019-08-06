@@ -43,12 +43,16 @@ These are the available endpoints of the API `@root : http://mywebsite.com`.
 * **POST @root/letters**:  
     Creates a set of letters for guessing the word.
 * **GET @root/scoreboard**:
+
     Returns a list of players with beloning scores.
 * **GET @root/players/:id**:
+
     Returns a single player with beloning score.
 * **POST @root/players**:
+
     Creates a single player with given name.
 * **PUT @root/players/:id**:
+
     Updates a single player with the current score.
 * **POST @root/category/:id**:
     Creates a word with given description and hint that belongs to the given category
