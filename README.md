@@ -55,4 +55,5 @@ These are the available endpoints of the API `@root : http://mywebsite.com`.
 
     Updates a single player with the current score.
 * **POST @root/category/:id**:
+
     Creates a word with given description and hint that belongs to the given category
