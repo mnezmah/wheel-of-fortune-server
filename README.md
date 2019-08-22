@@ -19,6 +19,7 @@ In this project, we are allowing multiple game rooms to be streamed simultaneusl
 The project initializes an object which populates stream data for each game room. Each stream data is an object that contains an array of clients (user ids) and a stream object. Stream datas are indexed by game id and they are dynamically created when a new game room is created.
 
 #API Endpoints
+
 These are the available endpoints of the API `@root : http://mywebsite.com`.
 * **POST @root/users**:  
     Creates new user.
