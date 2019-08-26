@@ -1,6 +1,10 @@
 # Wheel of fortune server
 
-A server-side of group project building multiplayer game Wheel of Fortune 
+
+[![example badge](badges/succeeded.svg)](https://dashboard.heroku.com/apps/wheel-of-fortune-server)
+
+A server-side of group project building multiplayer game Wheel of Fortune. 
+You can find a client-side repository [here]()
 
 # Technologies used
 For this project we areusing following technbologies:
