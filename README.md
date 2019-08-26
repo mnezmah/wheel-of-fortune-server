@@ -20,8 +20,8 @@ Try deployed version on [<img src="badges/heroku.png" width="100">](https://whee
 
 * [<img src="badges/postgres.png" width="25"> PostgreSQL](./auth/router.js)
 * [<img src="badges/javascrip.png" width="25"> JavaScript](./index.js)
-* [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
-* <img src="badges/Npm-logo.svg" width="50"> Token Authentication([jsonwebtoken](./games/router.js), [bcryptjs](./users/router.js))
+* [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](./games/router.js) (json-sse)
+* <img src="badges/Npm-logo.svg" width="50"> Token Authentication([jsonwebtoken](./auth/jwt.js), [bcryptjs](./users/router.js))
 * [<img src="badges/sequelize.svg" width="25"> Sequelize](./Players/model.js)
 * [<img src="badges/express.png" width="50"> ExpressJS](./index.js)
 
