@@ -15,14 +15,15 @@ Try deployed version on [<img src="badges/heroku.png" width="100">](https://whee
 - **[Endpoints used in API](#endpoints-in-this-API)**
 
 # Technologies used
-For this project we areusing following technbologies:
 
-* [<img src="badges/postgres.png" width="100"> PostgreSQL](https://www.postgresql.org/)
-* [<img src="badges/javascript.png" width="50"> JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+#### 👇Click links to view some samples in this project👇
+
+* [<img src="badges/postgres.png" width="100"> PostgreSQL](./auth/router.js)
+* [<img src="badges/javascript.png" width="50"> JavaScript](./index.js)
 * [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
-* <img src="badges/Npm-logo.svg" width="50"> Token Authentication([jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcryptjs](https://www.npmjs.com/package/bcryptjs))
-* [<img src="badges/sequelize.png" width="50"> Sequelize](https://sequelize.org/)
-* [<img src="badges/express.png" width="50"> ExpressJS](https://expressjs.com/)
+* <img src="badges/Npm-logo.svg" width="50"> Token Authentication([jsonwebtoken](./games/router.js), [bcryptjs](./users/router.js))
+* [<img src="badges/sequelize.png" width="50"> Sequelize](./Players/model.js)
+* [<img src="badges/express.png" width="50"> ExpressJS](./index.js)
 
 # Goals for this project
 
@@ -53,33 +54,48 @@ The project initializes an object which populates stream data for each game room
 These are the available endpoints of the API `@root : http://mywebsite.com`.
 * **POST @root/users**:  
     Creates new user.
+    <br>
 * **POST @root/logins**:  
     Logs in the user and returns an identification token valid for 2 hours.
+    <br>
 * **POST @root/category**:  
     Creates a new category for a game. 
+    <br>
 * **GET @root/category**:  
     Returns a list of available categories in the game.
+    <br>
 * **GET @root/category/:id**:  
     Returns a single category with given id.
+    <br>
 * **GET @root/stream**:  
     Returns the stream of all games.
+    <br>
 * **GET @root/game/:id**:  
     Returns single game with given id with belonging players and category.
+    <br>
 * **POST @root/game**:  
     Creates a new game.
+    <br>
 * **PUT @root/game/:id**:  
     Changes the game parameters (wheelValue, gussed array and given letters).
+    <br>
 * **GET @root/letters**:  
     Returns a list of all available letters.
+    <br>
 * **POST @root/letters**:  
     Creates a set of letters for guessing the word.
+    <br>
 * **GET @root/scoreboard**:\
     Returns a list of players with beloning scores.
+    <br>
 * **GET @root/players/:id**:\
     Returns a single player with beloning score.
+    <br>
 * **POST @root/players**:\
     Creates a single player with given name.
+    <br>
 * **PUT @root/players/:id**:\
     Updates a single player with the current score.
+    <br>
 * **POST @root/category/:id**:\
     Creates a word with given description and hint that belongs to the given category
