@@ -18,8 +18,8 @@ Try deployed version on [<img src="badges/heroku.png" width="100">](https://whee
 
 #### 👇Click links to view some samples in this project👇
 
-* [<img src="badges/postgres.png" width="100"> PostgreSQL](./auth/router.js)
-* [<img src="badges/javascrip.png" width="50"> JavaScript](./index.js)
+* [<img src="badges/postgres.png" width="50"> PostgreSQL](./auth/router.js)
+* [<img src="badges/javascrip.png" width="30"> JavaScript](./index.js)
 * [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
 * <img src="badges/Npm-logo.svg" width="50"> Token Authentication([jsonwebtoken](./games/router.js), [bcryptjs](./users/router.js))
 * [<img src="badges/sequelize.svg" width="50"> Sequelize](./Players/model.js)
