@@ -23,7 +23,7 @@ router.get('/game/:id', function (req, res, next) {
     .findByPk(
       id,
       {
-        include: [Player, Category ]
+        include: [Player, Category]
       }
     )
     .then(game => {

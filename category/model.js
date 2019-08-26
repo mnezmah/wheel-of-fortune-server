@@ -10,7 +10,7 @@ const Category = db.define(
             field: 'category_name'
         }
     },
-    {timestamps:false}
+    { timestamps: false }
 )
 
 Category.hasMany(Game)

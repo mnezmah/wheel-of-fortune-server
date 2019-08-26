@@ -13,11 +13,9 @@ const Word = db.define(
             type: Sequelize.STRING,
             field: 'word_clue'
         }
-
     },
-    {timestamps:false}
+    { timestamps: false }
 )
 Word.belongsTo(Category)
 
 module.exports = Word
-  

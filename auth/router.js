@@ -1,6 +1,6 @@
 
 const { Router } = require('express')
-const {toJWT } = require('./jwt')
+const { toJWT } = require('./jwt')
 const { toData } = require('./jwt')
 
 const router = new Router()
@@ -25,8 +25,6 @@ const userRepository = {
         return Promise.resolve(lengthBefore - this.users.length)
     }
 }
-
-// TODO: Add your routes below...
 
 // End-point to create a new user
 router.post('/users', (req, res, next) => {

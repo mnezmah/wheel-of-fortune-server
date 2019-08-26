@@ -19,5 +19,4 @@ const Game = db.define(
     },
     { timestamps: false }
 )
-
 module.exports = Game

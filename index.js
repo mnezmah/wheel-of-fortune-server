@@ -20,8 +20,6 @@ app.use(categoryRouter)
 app.use(gameRouter)
 app.use(playerRouter)
 
-
-
 const port = process.env.PORT || 5000
 app.listen(port, () => console.log(`listening on ${port}`))
 

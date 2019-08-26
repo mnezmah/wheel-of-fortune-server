@@ -6,7 +6,10 @@ const Player = db.define(
   'players', {
     name: Sequelize.STRING,
     score: Sequelize.INTEGER,
-    turn: Sequelize.INTEGER
+    turn: {
+      type: Sequelize.INTEGER,
+      defaultValue: 3
+    }
   },
   { timestamps: false }
 )
