@@ -1,19 +1,28 @@
 # Wheel of fortune server
+## What this project is about
+
+This is a server-side of group project building multiplayer game Wheel of Fortune using new ***Server-sent Events*** technologiy. 
+You can find a client-side repository [here](https://github.com/malanchito/wheel-of-fortune-client)
 
 Try deployed version on [<img src="badges/heroku.png" width="100">](https://wheel-of-fortune-server.herokuapp.com/)
 
-A server-side of group project building multiplayer game Wheel of Fortune. 
-You can find a client-side repository [here](https://github.com/malanchito/wheel-of-fortune-client)
+## Table of contents:
+
+- **[Technologies used](#technologies-used)**
+- **[Goals for this project](#goals-for-this-project)**
+- **[Features built so far overview with pull requests](#features-built-so-far-overview-with-pull-requests)**
+- **[Endpoints used in API](#endpoints-in-this-API)**
+- **[Featrures to add in the future](#features-to-add-in-the-future)**
 
 # Technologies used
 For this project we areusing following technbologies:
 
-* PostgreSQL
-* JavaScript
-* Server-Sent Events (json-sse)
-* Token Authentication (jsonwebtoken, bcryptjs)
-* Sequelize
-* ExpressJS
+* [<img src="badges/postgresql.png" width="50"> PostgreSQL](https://www.postgresql.org/)
+* [<img src="badges/javascript.png" width="50"> JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
+* [<img src="badges/Npm-logo.svg" width="50"> Token Authentication]([jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcryptjs](https://www.npmjs.com/package/bcryptjs))
+* [<img src="badges/sequelize.png" width="50"> Sequelize](https://sequelize.org/)
+* [<img src="badges/express.png" width="50"> ExpressJS](https://expressjs.com/)
 
 # Server Sent Events
 
