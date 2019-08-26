@@ -18,9 +18,9 @@ Try deployed version on [<img src="badges/heroku.png" width="100">](https://whee
 For this project we areusing following technbologies:
 
 * [<img src="badges/postgresql.png" width="50"> PostgreSQL](https://www.postgresql.org/)
-* [<img src="badges/javascript-36f5949a45.png" width="50"> JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [<img src="badges/Npm-logo.svg" width="50">[Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
-* [<img src="badges/Npm-logo.svg" width="50">[Token Authentication]([jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcryptjs](https://www.npmjs.com/package/bcryptjs))
+* [<img src="badges/javascript.png" width="50"> JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
+* [<img src="badges/Npm-logo.svg" width="50"> Token Authentication]([jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcryptjs](https://www.npmjs.com/package/bcryptjs))
 * [<img src="badges/sequelize.png" width="50"> Sequelize](https://sequelize.org/)
 * [<img src="badges/express.png" width="50"> ExpressJS](https://expressjs.com/)
 
