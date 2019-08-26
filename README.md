@@ -4,7 +4,7 @@
 This is a server-side of group project building multiplayer game Wheel of Fortune using new ***Server-sent Events*** technologiy. 
 You can find a client-side repository [here](https://github.com/malanchito/wheel-of-fortune-client)
 
-Try deployed version on [<img src="badges/heroku.png" width="50">](https://wheel-of-fortune-server.herokuapp.com/)
+Try deployed version on [<img src="badges/heroku.svg" width="75">](https://wheel-of-fortune-server.herokuapp.com/)
 
 ## Table of contents:
 
