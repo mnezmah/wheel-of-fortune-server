@@ -54,33 +54,34 @@ The project initializes an object which populates stream data for each game room
 These are the available endpoints of the API `@root : http://mywebsite.com`.
 * **POST @root/users**:  
     Creates new user.
-    <br>
+    <br />
 * **POST @root/logins**:  
     Logs in the user and returns an identification token valid for 2 hours.
-    <br>
+    <br />
 * **POST @root/category**:  
     Creates a new category for a game. 
-    <br>
+    <br />
 * **GET @root/category**:  
     Returns a list of available categories in the game.
-    <br>
+    <br />
 * **GET @root/category/:id**:  
     Returns a single category with given id.
-    <br>
+    <br />
 * **GET @root/stream**:  
     Returns the stream of all games.
-    <br>
+    <br />
 * **GET @root/game/:id**:  
     Returns single game with given id with belonging players and category.
-    <br>
+    <br />
 * **POST @root/game**:  
     Creates a new game.
-    <br>
+    <br />
 * **PUT @root/game/:id**:  
     Changes the game parameters (wheelValue, gussed array and given letters).
-    <br>
+    <br />
 * **GET @root/letters**:  
     Returns a list of all available letters.
+    <br>
     <br>
 * **POST @root/letters**:  
     Creates a set of letters for guessing the word.
