@@ -88,7 +88,7 @@ These are the available endpoints of the API `@root : http://mywebsite.com`.
     Changes the game parameters (wheelValue, gussed array and given letters).
     <br>
     <br>
-    * **GET @root/letters**:  
+* **GET @root/letters**:  
     Returns a list of all available letters.
     <br>
     <br>
