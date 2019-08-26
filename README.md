@@ -1,5 +1,5 @@
 # Wheel of fortune server
-[![heroku](badges/heroku.png)](https://dashboard.heroku.com/apps/wheel-of-fortune-server)
+[![heroku](badges/heroku.png =100x20)](https://dashboard.heroku.com/apps/wheel-of-fortune-server)
 
 A server-side of group project building multiplayer game Wheel of Fortune. 
 You can find a client-side repository [here]()
