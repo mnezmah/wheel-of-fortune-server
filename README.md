@@ -1,8 +1,9 @@
 # Wheel of fortune server
-[<img src="badges/heroku.png" width="100">](https://dashboard.heroku.com/apps/wheel-of-fortune-server)
+
+Try deployed version on [<img src="badges/heroku.png" width="100">](https://wheel-of-fortune-server.herokuapp.com/)
 
 A server-side of group project building multiplayer game Wheel of Fortune. 
-You can find a client-side repository [here]()
+You can find a client-side repository [here](https://github.com/malanchito/wheel-of-fortune-client)
 
 # Technologies used
 For this project we areusing following technbologies:
