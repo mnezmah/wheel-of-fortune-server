@@ -17,10 +17,10 @@ Try deployed version on [<img src="badges/heroku.png" width="100">](https://whee
 # Technologies used
 For this project we areusing following technbologies:
 
-* [<img src="badges/postgres.png" width="50"> PostgreSQL](https://www.postgresql.org/)
+* [<img src="badges/postgres.png" width="75"> PostgreSQL](https://www.postgresql.org/)
 * [<img src="badges/javascript.png" width="50"> JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [<img src="badges/Npm-logo.svg" width="50"> Server-Sent Events](https://www.npmjs.com/package/json-sse) (json-sse)
-* [<img src="badges/Npm-logo.svg" width="50"> Token Authentication]([jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcryptjs](https://www.npmjs.com/package/bcryptjs))
+* <img src="badges/Npm-logo.svg" width="50"> Token Authentication([jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), [bcryptjs](https://www.npmjs.com/package/bcryptjs))
 * [<img src="badges/sequelize.png" width="50"> Sequelize](https://sequelize.org/)
 * [<img src="badges/express.png" width="50"> ExpressJS](https://expressjs.com/)
 
@@ -56,17 +56,12 @@ These are the available endpoints of the API `@root : http://mywebsite.com`.
 * **POST @root/letters**:  
     Creates a set of letters for guessing the word.
 * **GET @root/scoreboard**:
-
     Returns a list of players with beloning scores.
 * **GET @root/players/:id**:
-
     Returns a single player with beloning score.
 * **POST @root/players**:
-
     Creates a single player with given name.
 * **PUT @root/players/:id**:
-
     Updates a single player with the current score.
 * **POST @root/category/:id**:
-
     Creates a word with given description and hint that belongs to the given category
