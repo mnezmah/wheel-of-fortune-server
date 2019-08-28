@@ -1,7 +1,7 @@
 # Wheel of fortune server
 ## What this project is about
 
-This is a server-side of group project building multiplayer game Wheel of Fortune using new ***Server-sent Events*** technologiy. 
+This is a server-side of group project building multiplayer game Wheel of Fortune using new ***Server-sent Events*** technology. 
 You can find a client-side repository [here](https://github.com/malanchito/wheel-of-fortune-client)
 
 Try deployed version on [<img src="badges/heroku.svg" width="75">](https://wheel-of-fortune-server.herokuapp.com/)
@@ -16,7 +16,7 @@ Try deployed version on [<img src="badges/heroku.svg" width="75">](https://wheel
 
 # Technologies used
 
-#### 👇Click links to view some samples in this project👇
+#### Click links to view some samples in this project👇
 
 * [<img src="badges/postgres.png" width="25"> PostgreSQL](./auth/router.js)
 * [<img src="badges/javascrip.png" width="25"> JavaScript](./index.js)
@@ -53,7 +53,7 @@ The project initializes an object which populates stream data for each game room
 
 These are the available endpoints of the API `@root : http://mywebsite.com`.
 * **POST @root/users**:  
-    Creates new user.
+    Creates a new user.
     <br>
     <br>
 * **POST @root/logins**:  
