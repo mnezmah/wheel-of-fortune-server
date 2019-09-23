@@ -28,8 +28,8 @@ Try deployed version on [<img src="badges/heroku.svg" width="75">](https://wheel
 # Goals for this project
 
 - To practice teamwork
-- To create a full-stack-app with iven features in given time
-- To learn server-sent events
+- To create a full-stack-app with the given features in a given time
+- To learn the server-sent events
 - To practice disciplined git usage with correct branching
 
 # Server Sent Events
